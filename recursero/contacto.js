@@ -46,13 +46,12 @@ if (nuevaConsulta.mail === '' || nuevaConsulta.consulta === '') {
   Swal.fire({
     icon: 'error',
     text: 'Debes completar todos los Campos',
-  })} else if (mayoriaEdad === 'menor') {
-Swal.fire({
-  icon: 'error',
-  text: 'Debes ser mayor de edad',
-})
+  })
 } else if (!mayoriaEdad) {
-  alert ('debes ser mayor de edad')
+  Swal.fire({
+    icon: 'error',
+    text: 'Debes ser mayor de edad',
+  })
 }
 else {
 consultas.push(nuevaConsulta) // 7
