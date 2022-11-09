@@ -1,0 +1,27 @@
+{
+  "name": "gerardogordin_trabajofinal_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerardogordin/gerardogordin_trabajofinal_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerardogordin/gerardogordin_trabajofinal_js/issues"
+  },
+  "homepage": "https://github.com/gerardogordin/gerardogordin_trabajofinal_js#readme",
+  "dependencies": {
+    "2": "^3.0.0",
+    "alert": "^5.1.1",
+    "axios": "^1.1.3",
+    "bootstrap": "^5.2.2",
+    "sweet": "^0.1.1",
+    "sweetalert2": "^11.6.7"
+  },
+  "description": ""
+}

@@ -1,0 +1,83 @@
+.estilo-foooter {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-right: 30px;
+    width: 100%;
+    max-height: 80px;
+    min-height: 80px;
+    margin-top: 0;
+  }
+  
+  .estilo-foooter__enlaces {
+    padding: 10px;
+  }
+  
+  .estilo-foooter .iconos {
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    background-image: url(../imagenes/redi-fondo.jpeg);
+    min-height: 500px;
+  }
+  
+  .navbar {
+    width: 100%;
+  }
+  
+  .card {
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+  
+  .carousel {
+    max-width: 500px !important;
+    max-height: 500px !important;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .carousel-item {
+    object-fit: cover;
+  }
+  
+  .inicio {
+    min-height: 65vh;
+  }
+  
+  .fotoquienessomos {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20rem;
+  }
+  
+  .formulario {
+    max-width: 50%;
+    margin: 0 auto;
+    text-shadow: 90%;
+  }
+  
+  @media screen and (max-width: 599px) {
+    .carousel {
+      padding-top: 2rem;
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .formulario {
+      max-width: 95%;
+    }
+  }
+  
