@@ -24,16 +24,15 @@ let listaCarrito = document.querySelector('#listaCarrito')
  
 function printData ( object ) {
   object.forEach((producto) => {
-    insertarContenidoDOM.innerHTML += `<div  id='seccionProductos' class="my-5">  
-    <div class="col-md-4">
-    <div class="card mb-4">
-      <img src="${producto.image}" class="card-img-top" alt="...">
+    insertarContenidoDOM.innerHTML += `
+    <div class="card">
+      <img src="${producto.image}" class="card-img" alt="...">
       <div class="card-body">
         <h5 class="card-title">${producto.title}</h5>
         <p class="card-text">$${producto.price}</p>
       </div>
       <button value='${producto.id}' onClick="handleCart(value)" class="btn btn-info agregar-carrito">Agregar al carrito</button>
-    </div></div>`
+    </div>`
   });
 }
 
@@ -48,8 +47,10 @@ function handleCart(e) {
     carrito.push(producto)
     localStorage.setItem('carrito', JSON.stringify(carrito)) // actualizo el carrito en el localstorage
   } else {
-    alert('este producto ya está en tu carrito')
-  }
+    Swal.fire({
+      icon: 'error',
+      text: 'Este producto ya esta en tu carrito',
+    })  }
 }
 
 

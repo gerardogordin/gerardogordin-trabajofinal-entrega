@@ -33,12 +33,34 @@
   .navbar {
     width: 100%;
   }
-  
+  .domGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .card {
+    display: flex;
+    flex-direction: column;
     max-width: 70%;
     max-height: 70%;
     margin: 0 auto;
     margin-bottom: 7rem;
+    background: #fff;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .card-title {
+    font-size: 12px;
+  }
+
+  .app {
+    background: #fff;
   }
   
   .carousel {

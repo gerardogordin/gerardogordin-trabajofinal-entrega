@@ -42,7 +42,6 @@ consulta: consulta
 //  6
 
 if (nuevaConsulta.mail === '' || nuevaConsulta.consulta === '') {
-//   alert('debes completar todos los campos')
   Swal.fire({
     icon: 'error',
     text: 'Debes completar todos los Campos',
@@ -51,9 +50,7 @@ Swal.fire({
   icon: 'error',
   text: 'Debes ser mayor de edad',
 })
-} else if (!mayoriaEdad) {
-  alert ('debes ser mayor de edad')
-}
+} 
 else {
 consultas.push(nuevaConsulta) // 7
 localStorage.setItem('consultas', JSON.stringify(consultas))  // 8
@@ -63,7 +60,7 @@ Swal.fire({
   title: `Consulta enviada. Nos pondremos en contacto. Tu consulta es la N° ${consultas.length}`,
   showConfirmButton: false,
   timer: 2000,
-  // window.location.reload()
+
 
 })
 
