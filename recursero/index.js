@@ -32,6 +32,7 @@ function printData ( object ) {
         <p class="card-text">$${producto.price}</p>
       </div>
       <button value='${producto.id}' onClick="handleCart(value)" class="btn btn-info agregar-carrito">Agregar al carrito</button>
+    </div>
     </div>`
   });
 }
